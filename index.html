@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrative Surveillance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Administrative Surveillance</h2>
+    <form id="surveillanceForm">
+      <label>Date:
+        <input type="date" id="date" name="date" required />
+      </label>
+      <label>Project Name:
+        <select name="project" id="project" required>
+          <option value="">Select Project</option>
+          <option>Freesia</option>
+          <option>Gardenia</option>
+          <option>Paramount Residences</option>
+          <option>Dhulikona</option>
+          <!-- Add more projects here -->
+        </select>
+      </label>
+      <label>Entry Time:
+        <input type="time" name="entry" required />
+      </label>
+      <label>Out Time:
+        <input type="time" name="out" required />
+      </label>
+
+      <!-- Issues with Photo Upload -->
+      <label>Issue - 1:
+        <input type="text" name="issue1" />
+        <input type="file" name="photo1" accept="image/*" capture="environment" />
+      </label>
+      <label>Issue - 2:
+        <input type="text" name="issue2" />
+        <input type="file" name="photo2" accept="image/*" capture="environment" />
+      </label>
+      <label>Issue - 3:
+        <input type="text" name="issue3" />
+        <input type="file" name="photo3" accept="image/*" capture="environment" />
+      </label>
+      <label>Issue - 4:
+        <input type="text" name="issue4" />
+        <input type="file" name="photo4" accept="image/*" capture="environment" />
+      </label>
+      <label>Issue - 5:
+        <input type="text" name="issue5" />
+        <input type="file" name="photo5" accept="image/*" capture="environment" />
+      </label>
+
+      <label>Comment:
+        <textarea name="comment" rows="3"></textarea>
+      </label>
+      <label>Visitor Name:
+        <input type="text" name="visitor" required />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
