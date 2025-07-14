@@ -8,7 +8,7 @@ document.getElementById("surveillanceForm").addEventListener("submit", function(
   const data = {};
   formData.forEach((value, key) => { data[key] = value });
 
-  fetch("https://script.google.com/macros/s/AKfycbw4FZeW04OIkV5VNPcv7rUcXYpC4CNL5ycU30MuGjLuti6uIOndDr1csevT-fLZumwF/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbyi30EQoB0fijdxFM1RmQolXepgT_4cFv8vL9VZr7ndGan2S5X23N6m0P84diAnUqVw/exec", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
